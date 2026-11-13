@@ -1,0 +1,56 @@
+{
+  "work_item_type": {
+    "column": "Issue Type",
+    "default": "Task",
+    "map": {
+      "Epic": "Feature",
+      "User Story": "User Story",
+      "Task": "Task",
+      "Subtask": "Task"
+    }
+  },
+  "field_map": {
+    "Summary": "System.Title",
+    "Description": "System.Description",
+    "Priority": "Microsoft.VSTS.Common.Priority",
+    "Status": "System.State",
+    "Comment": null
+  },
+  "value_map": {
+    "System.State": {
+      "To Do": "New",
+      "In Progress": "Active",
+      "Done": "Closed"
+    },
+    "Microsoft.VSTS.Common.Priority": {
+      "Highest": 1,
+      "High": 2,
+      "Medium": 3,
+      "Low": 4
+    }
+  },
+  "comment_columns": [
+    "Comment"
+  ],
+  "parent_child": {
+    "id_column": "Issue key",
+    "parent_key_column": "Parent key"
+  },
+  "comment_split_pattern": "\\r?\\n---\\r?\\n",
+  "skip_empty_fields": true,
+  "defaults": {
+    "System.AreaPath": "APS MGMT",
+    "System.IterationPath": "APS MGMT"
+  },
+  "type_defaults": {
+    "User Story": {
+      "System.State": "New"
+    },
+    "Task": {
+      "System.State": "New"
+    },
+    "Feature": {
+      "System.State": "New"
+    }
+  }
+}
