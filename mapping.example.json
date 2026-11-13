@@ -1,0 +1,39 @@
+{
+  "work_item_types": {
+    "User Story": "User Story",
+    "Task": "Task"
+  },
+  "fields": {
+    "Microsoft.VSTS.Scheduling.StoryPoints": "Microsoft.VSTS.Scheduling.StoryPoints",
+    "Custom.SourceOnlyField": null
+  },
+  "states": {
+    "User Story": {
+      "New": "New",
+      "Active": "Active",
+      "Resolved": "Resolved",
+      "Closed": "Closed"
+    }
+  },
+  "values": {
+    "Microsoft.VSTS.Common.Priority": {
+      "1": 1,
+      "2": 2
+    }
+  },
+  "identities": {
+    "dwayne.moore@hrsdc-rhdcc.gc.ca": "dwayne.moore@hrsdc-rhdcc.gc.ca"
+  },
+  "area_paths": {
+    "AIM Modernization": "APS MGMT"
+  },
+  "iteration_paths": {
+    "AIM Modernization": "APS MGMT",
+    "AIM Modernization\\Iteration 1": "APS MGMT\\Iteration 1",
+    "AIM Modernization\\Iteration 2": "APS MGMT\\Iteration 2",
+    "AIM Modernization\\Iteration 3": "APS MGMT\\Iteration 3"
+
+  },
+  "defaults": {},
+  "type_defaults": {}
+}
