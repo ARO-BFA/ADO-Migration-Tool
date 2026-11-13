@@ -5,14 +5,18 @@
   },
   "fields": {
     "Microsoft.VSTS.Scheduling.StoryPoints": "Microsoft.VSTS.Scheduling.StoryPoints",
-    "Custom.SourceOnlyField": null
+    "Custom.SourceOnlyField": null,
+    "Microsoft.VSTS.Common.ActivatedDate": null,
+    "Microsoft.VSTS.Common.ActivatedBy": null
   },
   "states": {
     "User Story": {
       "New": "New",
-      "Active": "Active",
-      "Resolved": "Resolved",
-      "Closed": "Closed"
+      "Active": "New"
+    },
+    "Task": {
+      "New": "New",
+      "Active": "New"
     }
   },
   "values": {
@@ -35,5 +39,12 @@
 
   },
   "defaults": {},
-  "type_defaults": {}
+  "type_defaults": {
+    "User Story": {
+      "System.State": "New"
+    },
+    "Task": {
+      "System.State": "New"
+    }
+  }
 }
